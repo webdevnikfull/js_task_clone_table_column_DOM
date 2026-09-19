@@ -1,27 +1,34 @@
-1. Replace `<your_account>` with your Github username in the link
-    - [DEMO LINK](https://<your_account>.github.io/js_task_clone_table_column_DOM/)
-2. Follow [this instructions](https://mate-academy.github.io/layout_task-guideline/)
-    - Run `npm run test` command to test your code;
-    - Run `npm run test:only -- -n` to run fast test ignoring linter;
-    - Run `npm run test:only -- -l` to run fast test with additional info in console ignoring linter.
+# 📋 JS Task: Clone Table Column DOM
 
-### Task: Copy/Paste table column
+> A pure JavaScript project focused on dynamically cloning table columns using DOM manipulation, styled with SCSS.
 
-Clone and paste element to document... Easy? Okay, but what do you say when I aks you to clone and paste table column? This task is for real heroes!
+![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Cypress](https://img.shields.io/badge/-Cypress-17202C?style=for-the-badge&logo=cypress&logoColor=white)
+![ESLint](https://img.shields.io/badge/-ESLint-4B32C3?style=for-the-badge&logo=eslint&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/-CI/CD-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
 
-Your task: Clone the second column from the table, and append it to the table. To increase the complexity, append it in front of the last table column.
+## 🎯 Project Overview
 
-Initial table:
+The main objective of this project is to handle and manipulate table elements in the DOM, specifically focusing on the operation of cloning a selected table column. The project emphasizes clean code, modern ES6+ standards, structural correctness, test automation, and robust code quality control.
 
-![Preview](./src/images/start.png)
+## 🛠️ Tech Stack & Tools
 
-Expected table:
-![Result](./src/images/result.png)
+* **Frontend:** JavaScript (ES6+), HTML5, SCSS / Sass
+* **E2E Testing:** Cypress (`cypress/integration/taskCloneTableColumn.spec.js`)
+* **Code Quality (Linters):** ESLint, Stylelint, Prettier, LintHTML
+* **CI/CD:** GitHub Actions (`.github/workflows/test.yml`)
 
-In this task, we don't provide details instructions. But below are some hints how to do this task:
-- JavaScript document has methods to work with tables. [Theory tables](https://javascript.info/dom-navigation#dom-navigation-tables) 
-- Before you start review the table structure
-- Remember that in this task HTML table has `tbody`, `thead`, `tfoot` sections.
-- As a first step try to append first column to the end of the table.
+## 📂 Directory Structure
 
-You don't need to change styles or HTML layout in this task. Change only `main.js` file.
+```text
+js_task_clone_table_column_DOM-master/
+├── .github/workflows/     # CI/CD automation (GitHub Actions)
+├── cypress/               # End-to-End tests (Cypress)
+├── src/
+│   ├── fonts/             # Local fonts
+│   ├── images/            # Graphic assets
+│   ├── scripts/           # Application logic (main.js)
+│   ├── styles/            # SCSS stylesheets (main.scss)
+│   └── index.html         # Main HTML skeleton
+├── package.json           # Package configuration & npm scripts
+└── ...
